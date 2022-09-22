@@ -18,5 +18,3 @@ vim.keymap.set('n', '<leader>x',
 	end,
 	opts
 )
-
-vim.keymap.set('n', '<F8>', ':FlutterOutlineToggle<CR>', opts)

@@ -1,8 +1,9 @@
-local lsp = require("plugins.configs.lspconfig")
+-- local lsp = require("plugins.configs.lspconfig")
 local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end,
   },
@@ -32,12 +33,7 @@ local plugins = {
       "stevearc/dressing.nvim",
     },
     config = function()
-      require("flutter-tools").setup {
-        lsp = {
-          on_attach = lsp.on_attach,
-          capabilities = lsp.capabilities
-        },
-      }
+      require("flutter-tools").setup()
       require("core.utils").load_mappings("flutter_tools")
     end,
   }

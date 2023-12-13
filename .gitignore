@@ -1,0 +1,9 @@
+# nvim
+nvim/.github/
+nvim/.gitignore
+nvim/.ignore
+nvim/.stylua.toml
+nvim/LICENSE
+nvim/init.lua
+nvim/lua/core/
+nvim/lua/plugins/

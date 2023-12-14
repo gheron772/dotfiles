@@ -1,17 +1,21 @@
+local M = {}
 local configs = require("plugins.configs.lspconfig")
-local on_attach = configs.on_attach
-local capabilities = configs.capabilities
+
+M.on_attach = function(client, bufnr)
+  configs.on_attach(client, bufnr)
+  client.server_capabilities.documentFormattingProvider = true
+  client.server_capabilities.documentRangeFormattingProvider = true
+end
+M.capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
 local servers = { "denols", "lua_ls" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    on_attach = function(client, bufnr)
-      on_attach(client, bufnr)
-      client.server_capabilities.documentFormattingProvider = true
-      client.server_capabilities.documentRangeFormattingProvider = true
-    end,
-    capabilities = capabilities,
+    on_attach = M.on_attach,
+    capabilities = M.capabilities,
   }
 end
+
+return M

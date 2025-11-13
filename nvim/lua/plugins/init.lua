@@ -17,16 +17,18 @@ return {
     "folke/which-key.nvim",
     event = "VeryLazy"
   },
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function(_, opts)
+      local cmp = require("cmp")
+
+      local mymappings = {
+        ["<C-i>"] = cmp.mapping.complete()
+      }
+
+      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, mymappings)
+      cmp.setup(opts)
+    end,
+  }
 }

@@ -4,4 +4,5 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map({ "n", "x", "o" }, "t", "<Plug>(leap)")
+-- mep({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

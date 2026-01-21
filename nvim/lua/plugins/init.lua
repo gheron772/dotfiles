@@ -19,16 +19,11 @@ return {
   },
 
   {
-    "hrsh7th/nvim-cmp",
-    config = function(_, opts)
-      local cmp = require("cmp")
-
-      local mymappings = {
-        ["<C-i>"] = cmp.mapping.complete()
-      }
-
-      opts.mapping = vim.tbl_deep_extend("force", opts.mapping, mymappings)
-      cmp.setup(opts)
-    end,
+    "ggandor/leap.nvim",
+    opts = {
+      safe_labels = '',
+      preview = false
+    },
+    event = "VeryLazy"
   }
 }

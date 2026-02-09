@@ -19,7 +19,7 @@ return {
   },
 
   {
-    "ggandor/leap.nvim",
+    url = "https://codeberg.org/andyg/leap.nvim",
     opts = {
       safe_labels = '',
       preview = false

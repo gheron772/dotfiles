@@ -1,0 +1,45 @@
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#workspaces,
+#window,
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray {
+  background: #1e1e2e;
+  color: #cdd6f4;
+
+  margin: 6px 4px;
+  padding: 6px 12px;
+}
+
+/* hover effect */
+
+#clock:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover {
+  background: #313244;
+}
+
+/* workspace style */
+
+#workspaces button {
+  padding: 4px 8px;
+  color: #a6adc8;
+}
+
+#workspaces button.active {
+  color: #ffd700;
+}

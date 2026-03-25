@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# yay, multilib
-#pacman -Sy --needed less git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
-sudo sed -i '/#\[multilib\]/,/Include/s/^#//' /etc/pacman.conf
-
-# hostname
-sudo hostnamectl hostname ksh-arch
+# yay
+# sudo pacman -Sy --needed less git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 
 # git
 git config --global user.name "gheron772"
@@ -13,7 +9,7 @@ git config --global user.email "gheron772@gmail.com"
 git config --global core.editor "nvim"
 
 # DE
-yay --noconfirm -Syu nautilus nautilus-open-any-terminal loupe
+yay --noconfirm -Syu nautilus nautilus-open-any-terminal loupe gnome-calculator
 xdg-mime default org.gnome.Loupe.desktop image/jpeg image/png image/gif image/webp
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 

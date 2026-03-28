@@ -11,6 +11,7 @@ git config --global core.editor "nvim"
 # DE
 yay --noconfirm -Syu nautilus nautilus-open-any-terminal loupe gnome-calculator
 xdg-mime default org.gnome.Loupe.desktop image/jpeg image/png image/gif image/webp
+xdg-settings set default-web-browser firefox.desktop
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 
 yay --noconfirm -S hyprpolkitagent hyprlock hyprpaper hyprshot awww-bin waybar wl-copy rofi swayosd wlogout

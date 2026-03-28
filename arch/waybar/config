@@ -16,7 +16,8 @@
     "network",
     "battery",
     "tray",
-    "clock"
+    "clock",
+    "custom/power"
   ],
 
   "hyprland/workspaces": {
@@ -53,5 +54,10 @@
 
   "tray": {
     "spacing": 15
+  },
+
+  "custom/power": {
+    "format" : "⏻",
+    "on-click": "wlogout"
   }
 }

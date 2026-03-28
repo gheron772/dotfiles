@@ -16,7 +16,8 @@ window#waybar {
 #battery,
 #network,
 #pulseaudio,
-#tray {
+#tray,
+#custom-power {
   background: #1e1e2e;
   color: #cdd6f4;
 

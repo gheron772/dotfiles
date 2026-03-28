@@ -13,7 +13,7 @@ yay --noconfirm -Syu nautilus nautilus-open-any-terminal loupe gnome-calculator
 xdg-mime default org.gnome.Loupe.desktop image/jpeg image/png image/gif image/webp
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal ghostty
 
-yay --noconfirm -S hyprpolkitagent hyprlock hyprpaper hyprshot awww-bin waybar wl-copy rofi swayosd
+yay --noconfirm -S hyprpolkitagent hyprlock hyprpaper hyprshot awww-bin waybar wl-copy rofi swayosd wlogout
 rm -rf ~/.config/hypr && ln -s ~/dotfiles/arch/hypr/ ~/.config/
 
 # korean

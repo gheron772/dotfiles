@@ -3,6 +3,10 @@
 # yay
 # sudo pacman -Sy --needed less git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
 
+# dns
+sudo systemctl enable --now systemd-resolved
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
 # git
 git config --global user.name "gheron772"
 git config --global user.email "gheron772@gmail.com"

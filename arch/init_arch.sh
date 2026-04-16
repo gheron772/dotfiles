@@ -35,7 +35,6 @@ sudo systemctl enable --now swayosd-libinput-backend
 
 # waybar
 ln -sf ~/dotfiles/arch/waybar ~/.config/
-sudo rm -f /etc/xdg/autostart/nm-applet.desktop
 
 # zsh
 yay --noconfirm -S zsh-autosuggestions zsh-syntax-highlighting oh-my-zsh-git

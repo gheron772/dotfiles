@@ -22,7 +22,7 @@ yay --noconfirm -S hyprpolkitagent hyprlock hypridle hyprpaper hyprshot awww-bin
 rm -rf ~/.config/hypr && ln -s ~/dotfiles/arch/hypr/ ~/.config/
 
 # korean
-yay --noconfirm -S kime-git ttf-kopub ttf-jetbrains-mono-nerd ttf-d2coding
+yay --noconfirm -S kime-git noto-fonts-emoji ttf-kopub ttf-jetbrains-mono-nerd ttf-d2coding
 
 # dev
 yay --noconfirm -S ghostty nvim ripgrep jq net-tools wl-clipboard fastfetch sysstat

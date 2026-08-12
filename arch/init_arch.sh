@@ -24,6 +24,9 @@ rm -rf ~/.config/hypr && ln -s ~/dotfiles/arch/hypr/ ~/.config/
 # korean
 yay --noconfirm -S kime-git noto-fonts-emoji ttf-kopub ttf-jetbrains-mono-nerd ttf-d2coding
 
+# emoji
+mkdir ~/.fonts; ln -s /usr/share/fonts/noto/NotoColorEmoji.ttf ~/.fonts/; fc-cache -f -v
+
 # dev
 yay --noconfirm -S ghostty nvim ripgrep jq net-tools wl-clipboard fastfetch sysstat
 
